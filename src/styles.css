@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: url("./fonts/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-VariableFont_opsz\,wght.ttf");
+}
+
+:root {
+  --color-bg: #1c1a18;
+  --color-primary: #c84b1f;
+  --color-secondary: #d4935a;
+  --color-highlight: #e8c87a;
+  --color-surface: #f5f2ec;
+  --color-muted: #4a4540;
+
+  --font-display: "Playfair Display", serif; /* headings */
+  --font-body: "Inter", sans-serif; /* body copy */
+
+  --radius-sm: 4px;
+  --radius-md: 10px;
+
+  --spacing-section: 96px;
+  --spacing-card: 32px;
+
+  font-size: 16px;
+  font-family: "Inter";
+}
+
+header {
+  ul {
+    list-style: none;
+  }
+}
