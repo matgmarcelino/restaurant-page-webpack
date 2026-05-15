@@ -3,7 +3,7 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 
 export default {
   mode: "development",
-  entry: "./src/index.js",
+  entry: "./src/js/index.js",
   output: {
     filename: "main.js",
     path: path.resolve(import.meta.dirname, "dist"),
@@ -25,7 +25,7 @@ export default {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.svg$/i,
+        test: /\.(svg|ttf|woff|woff2|eot|otf)$/i,
         type: "asset/resource",
       },
     ],
