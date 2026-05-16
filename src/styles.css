@@ -21,6 +21,7 @@
   --color-highlight: #e8c87a;
   --color-surface: #f5f2ec;
   --color-muted: #4a4540;
+  --color-text: #7c7771;
 
   --font-display: "Playfair Display", serif; /* headings */
   --font-body: "Inter", sans-serif; /* body copy */
@@ -175,7 +176,7 @@ footer {
 
   .subtitle {
     margin-top: 1rem;
-    color: var(--color-muted);
+    color: var(--color-text);
     width: clamp(30%, 400px, 50%);
   }
 
@@ -301,6 +302,34 @@ section.intro {
       .active {
         list-style: circle;
         color: var(--color-highlight);
+      }
+    }
+  }
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  .main-container {
+    .title {
+      font-family: "Playfair Display";
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--color-muted);
+
+      p.name {
+        letter-spacing: 1px;
+        font-weight: 800;
+        font-size: 1.5rem;
+      }
+
+      p.subtitle {
+        color: var(--color-muted);
       }
     }
   }

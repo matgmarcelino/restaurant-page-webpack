@@ -21,7 +21,7 @@ btnGroup.className = "btn-group";
 const buttonReserve = document.createElement("button");
 buttonReserve.className = "reserve";
 buttonReserve.textContent = "RESERVE A TABLE";
-const buttonMenu = document.createElement("button");
+export const buttonMenu = document.createElement("button");
 buttonMenu.className = "menu";
 buttonMenu.textContent = "VIEW MENU";
 btnGroup.append(buttonReserve, buttonMenu);
