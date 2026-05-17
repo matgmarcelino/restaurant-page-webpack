@@ -1,3 +1,6 @@
+const homeContainer = document.createElement('div');
+homeContainer.className = 'home-container'
+
 const hero = document.createElement("div");
 hero.className = "hero";
 
@@ -27,5 +30,6 @@ buttonMenu.textContent = "VIEW MENU";
 btnGroup.append(buttonReserve, buttonMenu);
 
 hero.append(eyebrow, title, subtitle, btnGroup);
+homeContainer.append(hero);
 
-export default hero;
+export default homeContainer;

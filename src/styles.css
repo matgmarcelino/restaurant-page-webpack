@@ -157,61 +157,64 @@ footer {
 
 /* HOME PAGE */
 
-.hero {
-  padding-left: 4rem;
-  padding-top: 3rem;
-  background-image: url("./assets/logo.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 15rem;
-
-  .eyebrow {
-    color: var(--color-secondary);
-    font-weight: 300;
-    letter-spacing: 5px;
-  }
-
-  .title {
-    width: clamp(30%, 400px, 50%);
-    font-family: "Playfair Display";
-    letter-spacing: 2px;
-    font-size: 3.5rem;
-    font-weight: 700;
-    span {
-      color: var(--color-primary);
-    }
-  }
-
-  .subtitle {
-    margin-top: 1rem;
-    color: var(--color-text);
-    width: clamp(30%, 400px, 50%);
-  }
-
-  .btn-group {
-    margin-top: 2rem;
-    display: flex;
-    gap: 1rem;
-
-    button {
-      padding: 0.5rem 1rem;
-      font-family: "Inter";
-      font-size: 1rem;
+.home-container {
+  .hero {
+    padding-left: 4rem;
+    padding-top: 3rem;
+    background-image: url("./assets/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15rem;
+  
+    .eyebrow {
+      color: var(--color-secondary);
       font-weight: 300;
-      letter-spacing: 2px;
-      border: 1px solid var(--color-muted);
-      border-radius: 0.5rem;
-      background-color: transparent;
-      color: var(--color-surface);
-      cursor: pointer;
-      transition: background-color 200ms;
+      letter-spacing: 5px;
     }
-
-    button:hover {
-      background-color: var(--color-muted);
+  
+    .title {
+      width: clamp(30%, 400px, 50%);
+      font-family: "Playfair Display";
+      letter-spacing: 2px;
+      font-size: 3.5rem;
+      font-weight: 700;
+      span {
+        color: var(--color-primary);
+      }
+    }
+  
+    .subtitle {
+      margin-top: 1rem;
+      color: var(--color-text);
+      width: clamp(30%, 400px, 50%);
+    }
+  
+    .btn-group {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+  
+      button {
+        padding: 0.5rem 1rem;
+        font-family: "Inter";
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 2px;
+        border: 1px solid var(--color-muted);
+        border-radius: 0.5rem;
+        background-color: transparent;
+        color: var(--color-surface);
+        cursor: pointer;
+        transition: background-color 200ms;
+      }
+  
+      button:hover {
+        background-color: var(--color-muted);
+      }
     }
   }
 }
+
 
 /* MENU PAGE */
 
@@ -426,4 +429,39 @@ main {
       }
     }
   }
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+
+  .hero {
+    padding-left: 4rem;
+    padding-top: 3rem;
+  
+    .eyebrow {
+      color: var(--color-secondary);
+      font-weight: 300;
+      letter-spacing: 5px;
+      font-size: 0.8rem;
+    }
+  
+    .title {
+      width: clamp(30%, 400px, 50%);
+      font-family: "Playfair Display";
+      font-size: 3rem;
+      font-weight: 700;
+      span {
+        color: var(--color-primary);
+      }
+    }
+  
+    .subtitle {
+      margin-top: 1rem;
+      color: var(--color-text);
+      width: clamp(30%, 400px, 50%);
+      font-weight: 300;
+    }
+  }
+
 }
