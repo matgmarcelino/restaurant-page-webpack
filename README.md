@@ -41,26 +41,8 @@ src/
         └── menuItems.js    # Item cards per category
 ```
 
-## Getting Started
-
-```bash
-npm install
-```
-
-Start the dev server (hot reload on `src/index.html` changes):
-
-```bash
-npx webpack serve
-```
-
-Build for production:
-
-```bash
-npx webpack
-```
-
 Output lands in `dist/`.
 
 ## Live Demo
 
-[GitHub Pages / hosted link — add when deployed]
+(https://matgmarcelino.github.io/restaurant-page-webpack/)
