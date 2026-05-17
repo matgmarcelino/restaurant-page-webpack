@@ -165,13 +165,13 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 15rem;
-  
+
     .eyebrow {
       color: var(--color-secondary);
       font-weight: 300;
       letter-spacing: 5px;
     }
-  
+
     .title {
       width: clamp(30%, 400px, 50%);
       font-family: "Playfair Display";
@@ -182,18 +182,18 @@ footer {
         color: var(--color-primary);
       }
     }
-  
+
     .subtitle {
       margin-top: 1rem;
       color: var(--color-text);
       width: clamp(30%, 400px, 50%);
     }
-  
+
     .btn-group {
       margin-top: 2rem;
       display: flex;
       gap: 1rem;
-  
+
       button {
         padding: 0.5rem 1rem;
         font-family: "Inter";
@@ -207,14 +207,13 @@ footer {
         cursor: pointer;
         transition: background-color 200ms;
       }
-  
+
       button:hover {
         background-color: var(--color-muted);
       }
     }
   }
 }
-
 
 /* MENU PAGE */
 
@@ -282,8 +281,8 @@ section.intro {
       gap: 1rem;
       color: var(--color-text);
       transform: scaleX(1.1);
-        transform-origin: left;
-        font-size: 0.71rem;
+      transform-origin: left;
+      font-size: 0.71rem;
     }
 
     section {
@@ -410,7 +409,9 @@ main {
             color: var(--color-muted);
             background-color: transparent;
             cursor: pointer;
-            transition: background-color 200ms, color 200ms;
+            transition:
+              background-color 200ms,
+              color 200ms;
           }
 
           button:hover {
@@ -434,34 +435,202 @@ main {
 .about-container {
   display: flex;
   flex-direction: column;
+  overflow: auto;
 
   .hero {
-    padding-left: 4rem;
-    padding-top: 3rem;
-  
+    padding: 4rem 5rem;
+    border-bottom: 1px solid var(--color-muted);
+
     .eyebrow {
       color: var(--color-secondary);
       font-weight: 300;
       letter-spacing: 5px;
-      font-size: 0.8rem;
     }
-  
+
     .title {
       width: clamp(30%, 400px, 50%);
       font-family: "Playfair Display";
-      font-size: 3rem;
+      font-size: 4rem;
       font-weight: 700;
       span {
         color: var(--color-primary);
       }
     }
-  
+
     .subtitle {
       margin-top: 1rem;
       color: var(--color-text);
       width: clamp(30%, 400px, 50%);
       font-weight: 300;
+      font-size: 1.5rem;
     }
   }
 
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid var(--color-muted);
+
+    .img {
+      background-image: url("./assets/logo.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 15rem;
+      border-right: 1px solid var(--color-muted);
+    }
+
+    .the-kitchen {
+      display: flex;
+      flex-direction: column;
+      padding: 4rem;
+      gap: 1rem;
+
+      .eyebrow {
+        color: var(--color-secondary);
+        font-weight: 300;
+        letter-spacing: 5px;
+      }
+
+      .title {
+        font-size: 3rem;
+        font-family: "Playfair Display";
+      }
+
+      .subtitle {
+        color: var(--color-text);
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom: 1px solid var(--color-muted);
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 2rem;
+
+      .card-title {
+        font-size: 2.5rem;
+        color: var(--color-highlight);
+        font-family: "Playfair Display";
+        font-weight: 800;
+      }
+
+      .card-subtitle {
+        color: var(--color-muted);
+      }
+    }
+
+    .card:not(:last-child) {
+      border-right: 1px solid var(--color-muted);
+    }
+  }
+
+  .meet-the-team {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem;
+    border-bottom: 1px solid var(--color-muted);
+
+    .eyebrow {
+      color: var(--color-secondary);
+      font-weight: 300;
+      letter-spacing: 5px;
+    }
+
+    .title {
+      font-size: 3rem;
+      font-family: "Playfair Display";
+    }
+
+    .team-cards {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+
+    .card {
+      display: grid;
+      align-items: center;
+      grid-template-columns: auto 1fr 1fr;
+      gap: 3rem;
+      padding: 2rem 0;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--color-muted);
+      }
+
+      .pfp {
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        border: 1px solid var(--color-muted);
+        color: var(--color-secondary);
+        border-radius: 50%;
+      }
+
+      .info {
+        .card-title {
+          font-family: "Playfair Display";
+          font-size: 2rem;
+        }
+
+        .card-subtitle {
+          color: var(--color-secondary);
+        }
+      }
+
+      .bio {
+        color: var(--color-text);
+      }
+    }
+  }
+
+  .cta {
+    display: flex;
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+      border: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    p {
+      font-family: "Playfair Display";
+      font-size: 3rem;
+      font-weight: 800;
+    }
+
+    button {
+      border: none;
+      border-radius: 0.5rem;
+      background-color: var(--color-primary);
+      color: var(--color-surface);
+      font-size: 1rem;
+      cursor: pointer;
+      transition:
+        background-color 200ms,
+        color 200ms;
+    }
+
+    button:hover {
+      background-color: var(--color-highlight);
+      color: var(--color-muted);
+    }
+  }
 }
